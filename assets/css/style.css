@@ -382,9 +382,64 @@ body {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     box-shadow: 0 0 3px var(--secondary-color);
-    /* transform: translateY(-5px); */
 }
 
+.text-post {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    justify-content: space-around;
+}
+
+.text-post h2 {
+    position: relative;
+    width: max-content;
+}
+
+.text-post h2::after {
+    content: '';
+    width: 60%;
+    height: 1px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.text-post p {
+    margin: 1rem 0;
+    text-indent: 3rem;
+}
+
+.text-post img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.text-post span a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.text-post span a:hover {
+    color: var(--gray-span);
+}
+
+.text-post span {
+    margin-bottom: 2rem;
+}
+
+.img-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-post h2 {
+    margin-bottom: 3rem;
+}
 
 
 
@@ -399,8 +454,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 @media (max-width: 900px) {
     body {
@@ -465,6 +518,8 @@ footer {
     .rodape p {
         font-size: 1.2rem;
     }
+
+
 }
 
 ::selection {
