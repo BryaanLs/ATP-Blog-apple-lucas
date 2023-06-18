@@ -6,11 +6,13 @@ const inputEmail = document.getElementById('email');
 function openMenu() {
     menuMobile.classList.contains('active') ? buttonMenuMobile.innerText = '☰' : buttonMenuMobile.innerText = 'x';
     menuMobile.classList.toggle('active');
+
 }
 
 function sendEmail() {
     alert('Cadastrado com sucesso! (MENSAGEM FICTICIA)');
 }
+buttonMenuMobile.addEventListener('click', openMenu);
 
 let inputEmailLength = inputEmail.addEventListener('change', () => {
     if (inputEmail.value.length > 0) {
@@ -18,4 +20,3 @@ let inputEmailLength = inputEmail.addEventListener('change', () => {
     }
 })
 
-buttonMenuMobile.addEventListener('click', openMenu);

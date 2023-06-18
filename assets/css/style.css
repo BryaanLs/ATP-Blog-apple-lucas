@@ -519,6 +519,16 @@ footer {
         font-size: 1.2rem;
     }
 
+    .text-post h2 {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .bg-hero {
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
 
 }
 
